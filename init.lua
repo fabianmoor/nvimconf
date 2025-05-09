@@ -5,9 +5,11 @@ require("core.keymaps")
 require("config.tree-sitter")
 require("config.gitsigns")
 require("config.none-ls")
-require("config.alpha")
 require("config.lsp_signature")
 require("config.formatter")
+require("config.mason")
+-- require("config.blink-cmp")
+require("config.lsp")
 -- require("config.mason_workaround")
 
 -- Theme

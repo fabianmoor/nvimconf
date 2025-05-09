@@ -4,6 +4,10 @@ require("mason").setup{
     "github:mason-org/mason-registry",
   },
 }
-require("mason-lspconfig").setup{
-  ensure_installed = {"jdtls"},
+require("mason-lspconfig").setup {
+    ensure_installed = {
+      "lua_ls",
+      "rust_analyzer",
+      "jdtls" 
+      },
 }

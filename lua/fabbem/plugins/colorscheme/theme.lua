@@ -22,5 +22,7 @@ return {
       })
     end,
   },
+  {
+    "tiagovla/tokyodark.nvim"
+  },
 }
-

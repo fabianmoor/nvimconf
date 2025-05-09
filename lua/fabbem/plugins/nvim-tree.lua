@@ -21,6 +21,7 @@ return {
       -- This will work alongside the default <CR> mapping
       vim.keymap.set('n', 'l', api.node.open.edit, opts('Open'))
       vim.keymap.set('n', 'h', api.node.open.edit, opts('Close'))
+      vim.keymap.set('n', 'h', api.node.open.edit, opts('Close'))
 
       -- Example: You could REMOVE a default mapping if you wanted:
       -- vim.keymap.del('n', '<CR>', { buffer = bufnr })
@@ -94,7 +95,6 @@ return {
 
   end, -- End of the config function
 }
-
 
 
 

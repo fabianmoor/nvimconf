@@ -17,8 +17,8 @@ keymap.set("n", "<C-l>", "<C-w>l", { desc = "Switch pane rigth" })
 keymap.set("n", "<C-k>", "<C-w>k", { desc = "Switch pane up" })
 keymap.set("n", "<C-j>", "<C-w>j", { desc = "Switch pane down" })
 
--- Toggle Nvim tree
-keymap.set("n", "<leader>e", function() vim.cmd("NvimTreeToggle") end, { desc = "Open nvim tree" })
+
+keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle file explorer" }) -- toggle file explorer
 
 -- Finding files
 keymap.set("n", "ff", function() vim.cmd("Telescope find_files") end, { desc = "Find files" })

@@ -22,6 +22,7 @@ keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle file ex
 
 -- Finding files
 keymap.set("n", "ff", function() vim.cmd("Telescope find_files") end, { desc = "Find files" })
+keymap.set("n", "lf", function() vim.cmd("Telescope live_grep") end, { desc = "Find files" })
 keymap.set("n", "fb", function() vim.cmd("Telescope buffers") end, { desc = "Find files" })
 
 -- Switching buffers
@@ -31,8 +32,6 @@ keymap.set("n", "<S-h>", "<CMD>bprevious<CR>")
 -- TogglTerm
 keymap.set("n", "<D-Space>", function() vim.cmd("FloatermToggle") end, { desc = "Toggle Term"})
 keymap.set("t", "<D-Space>", function() vim.cmd("FloatermToggle") end, { desc = "Toggle Term"})
-
-keymap.set("n", "<leader>v", "<cmd>CodeCompanionActions<cr>", { noremap = true, silent = true })
 
 -- LazyGit
 keymap.set("n", "<leader>lg", function() vim.cmd("LazyGit") end, { desc = "Open LazyGit" })

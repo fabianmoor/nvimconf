@@ -16,13 +16,17 @@ return {
     lazy = false,
     priority = 1000,
     config = function()
-      require("cyberdream").setup({
+      require("cyberdream").setup {
         variant = "default",
         transparent = true,
-      })
+      }
     end,
   },
   {
-    "tiagovla/tokyodark.nvim"
+    "tiagovla/tokyodark.nvim",
+  },
+
+  {
+    "eldritch-theme/eldritch.nvim",
   },
 }
